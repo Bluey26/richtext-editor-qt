@@ -1,4 +1,4 @@
-# rich-editor-qt
+# richtext-editor-qt
 
 ![example](https://github.com/Bluey26/rich-editor-qt/assets/143142826/7274045a-13d1-417b-b659-42c99cb1993c)
 
