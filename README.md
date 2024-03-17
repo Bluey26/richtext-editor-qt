@@ -29,6 +29,8 @@ make
 
 After that you will have a `textedit` binary which you can link to certain file formats.
 
+**To see an introduction of the program capabilities, open example.html or example.md using the program.**
+
 At the moment, the program can write/open the following formats:
 - .TXT
 - .MD (Markdown)
