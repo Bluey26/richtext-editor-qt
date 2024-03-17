@@ -1,5 +1,10 @@
 # rich-editor-qt
+
+![example](https://github.com/Bluey26/rich-editor-qt/assets/143142826/7274045a-13d1-417b-b659-42c99cb1993c)
+
+
 WYSIWYG lightweight Rich text editor example code used to demonstrate the capabilities of Qt's QTextEdit class. Allows to write and see markdown,html and plaintext. Allows to export to .odt and .pdf
+
 
 This code has been obtained from:
 https://doc.qt.io/qt-5/qtwidgets-richtext-textedit-example.html which links to the original code: https://code.qt.io/cgit/qt/qtbase.git/tree/examples/widgets/richtext/textedit?h=5.15
@@ -49,6 +54,8 @@ There are still some things to do, like:
 - Link button and automatic link detection
 - Paste without formatting
 - Bulletlist and ordered list button
+- Paste date and time shold not paste into the last line, but in the line the cursor is located
+
 
 ---
 License: GPL v3
