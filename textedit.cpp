@@ -126,8 +126,8 @@ TextEdit::TextEdit(QWidget *parent)
         helpMenu->addAction(tr("About &Qt"), qApp, &QApplication::aboutQt);
     }
 
-		// Here you can change the default font
-    QFont textFont("Hack");
+		// Here you can change the default font It can break the markdown function so be careful.
+    QFont textFont("Helvetica");
     textFont.setStyleHint(QFont::SansSerif);
     textEdit->setFont(textFont);
     fontChanged(textEdit->font());
