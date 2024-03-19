@@ -56,8 +56,8 @@ There are still some things to do, like:
 - Link button and automatic link detection
 - Paste without formatting
 - Bulletlist and ordered list button
-- Paste date and time shold not paste into the last line, but in the line the cursor is located
-
+- Remember window position at opening the program(at the moment it opens in a small size)
+- Fix some accent display errors
 
 ---
 License: GPL v3
