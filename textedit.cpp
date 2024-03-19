@@ -276,7 +276,6 @@ void TextEdit::setupEditActions()
     const QIcon timeIcon = QIcon::fromTheme("clock");
     QAction *actionDate = menu->addAction(timeIcon, tr("Paste Date and Time"), this, &TextEdit::dateytime);
     actionDate->setShortcut(QKeySequence("CTRL+SHIFT+V"));
-    tb->addAction(actionDate);
 
 
     //Here you can change the force white line key combination.
