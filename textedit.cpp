@@ -278,6 +278,13 @@ void TextEdit::setupEditActions()
     actionDate->setShortcut(QKeySequence("CTRL+SHIFT+V"));
     tb->addAction(actionDate);
 
+
+    //Here you can change the force white line key combination.
+	
+    const QIcon spaceIcon = QIcon::fromTheme("filename-underscore-amarok");
+    QAction *actionSpace = menu->addAction(spaceIcon, tr("Force white line"), this, &TextEdit::forcespace);
+    actionSpace->setShortcut(QKeySequence("Ctrl+}"));
+	
 }
 
 void TextEdit::setupTextActions()
@@ -916,5 +923,13 @@ void TextEdit::alignmentChanged(Qt::Alignment a)
 
 void TextEdit::dateytime()
 {
-        textEdit->append(QDateTime::currentDateTime().toString ("yyyy, MMM dd, hh:mm:ss"));
+        QTextCursor cursor = textEdit->textCursor();
+        cursor.insertText(QDateTime::currentDateTime().toString ("yyyy, MMM dd, hh:mm:ss"));
+}
+
+
+// Function to force white line
+void TextEdit::forcespace()
+{
+        textEdit->append(" ");
 }
