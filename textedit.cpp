@@ -509,7 +509,7 @@ void TextEdit::fileOpen()
     fileDialog.setAcceptMode(QFileDialog::AcceptOpen);
     fileDialog.setFileMode(QFileDialog::ExistingFile);
     // Here we set the default file to look for as the markdown file, and the other options
-    fileDialog.setNameFilter(tr("Markdown file (*.md);;HTML file (*.html);;Text File (*.txt);;All Files (*)"));
+    fileDialog.setNameFilter(tr("Supported Formats (*.md , *.html);;Markdown file (*.md);;HTML file (*.html);;Text File (*.txt);;All Files (*)"));
     
  // This is what it used to look before.   
 /*    
