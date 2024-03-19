@@ -89,7 +89,7 @@ private slots:
     void filePrintPdf();
 
     void dateytime();
-
+    void forcespace();
 
     void textBold();
     void textUnderline();
