@@ -321,6 +321,19 @@ void TextEdit::setupTextActions()
     tb->addAction(actionTextUnderline);
     actionTextUnderline->setCheckable(true);
 
+    // Strikeout Function
+
+    const QIcon strikeoutIcon = QIcon::fromTheme("format-text-strikethrough", QIcon(rsrcPath + "/textstrikeout.png"));
+    actionstrikeout = menu->addAction(strikeoutIcon, tr("s&Trikeout"), this, &TextEdit::textstrikeout);
+    actionstrikeout->setShortcut(Qt::CTRL + Qt::Key_T);
+    actionstrikeout->setPriority(QAction::LowPriority);
+    QFont strikeout;
+    strikeout.setStrikeOut(true);
+    actionstrikeout->setFont(strikeout);
+    tb->addAction(actionstrikeout);
+    actionstrikeout->setCheckable(true);
+
+	
     menu->addSeparator();
 
     const QIcon leftIcon = QIcon::fromTheme("format-justify-left", QIcon(rsrcPath + "/textleft.png"));
@@ -643,6 +656,16 @@ void TextEdit::textItalic()
     mergeFormatOnWordOrSelection(fmt);
 }
 
+// Strikeout Function
+
+void TextEdit::textstrikeout()
+{
+    QTextCharFormat fmt;
+    fmt.setFontStrikeOut(actionstrikeout->isChecked());
+    mergeFormatOnWordOrSelection(fmt);
+}
+
+
 void TextEdit::textFamily(const QString &f)
 {
     QTextCharFormat fmt;
@@ -896,6 +919,7 @@ void TextEdit::fontChanged(const QFont &f)
     actionTextBold->setChecked(f.bold());
     actionTextItalic->setChecked(f.italic());
     actionTextUnderline->setChecked(f.underline());
+    actionstrikeout->setChecked(f.strikeOut());
 }
 
 void TextEdit::colorChanged(const QColor &c)
