@@ -1,6 +1,7 @@
 # richtext-editor-qt
 
-![example](https://github.com/Bluey26/rich-editor-qt/assets/143142826/7274045a-13d1-417b-b659-42c99cb1993c)
+![example-color-schemes](https://github.com/Bluey26/richtext-editor-qt/assets/143142826/68494a7f-5e6b-4689-aba1-edae9e980351)
+
 
 
 WYSIWYG lightweight Rich text editor example code used to demonstrate the capabilities of Qt's QTextEdit class. Allows to write and see markdown,html and plaintext. Allows to export to .odt and .pdf
