@@ -94,6 +94,9 @@ private slots:
     void textBold();
     void textUnderline();
     void textItalic();
+
+    void textstrikeout();
+
     void textFamily(const QString &f);
     void textSize(const QString &p);
     void textStyle(int styleIndex);
@@ -127,6 +130,9 @@ private:
     QAction *actionTextBold;
     QAction *actionTextUnderline;
     QAction *actionTextItalic;
+
+    QAction *actionstrikeout;
+
     QAction *actionTextColor;
     QAction *actionAlignLeft;
     QAction *actionAlignCenter;
