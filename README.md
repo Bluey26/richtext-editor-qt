@@ -36,7 +36,8 @@ At the moment, the program can write/open the following formats:
 - .MD (Markdown)
 - .HTML *
 
-* HTML is written using QTextDocument rich text, which is based in HTML4 markup (More info in: https://doc.qt.io/qt-6/richtext-html-subset.html). It tends to add some unnecesary code, so using markdown is recommended.
+
+ *HTML is written using QTextDocument rich text, which is based in HTML4 markup (More info in: https://doc.qt.io/qt-6/richtext-html-subset.html). It tends to add some unnecesary code, so using markdown is recommended.
 
 
 
@@ -49,7 +50,6 @@ The program is also able to export to the following formats (But at the moment c
 Unfortunately it is not able to open and edit the .odt and .pdf created with this program.
 
 There are still some things to do, like:
-- adding strikethrough button.
 - A button to add images
 - Zoom-in and zoom-out capabities
 - Being able to resize images
